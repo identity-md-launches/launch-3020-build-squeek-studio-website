@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "viem": [
+        "node_modules/viem/_esm/index.js",
+        "test/scratch/node_modules/viem/_esm/index.js"
+      ],
+      "viem/chains": [
+        "node_modules/viem/_esm/chains/index.js",
+        "test/scratch/node_modules/viem/_esm/chains/index.js"
+      ]
+    }
+  }
+}

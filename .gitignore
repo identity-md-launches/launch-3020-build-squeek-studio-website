@@ -1,0 +1,10 @@
+# Explicit path budget: generated dependency/cache directories at every nesting
+# level, local TypeScript build metadata, and disposable test/scratch only.
+# Source, public runtime assets, package-lock.json, artifacts, and dist stay included.
+**/node_modules/
+**/.cache/
+**/npm-cache/
+**/.npm/
+**/.vite/
+**/*.tsbuildinfo
+test/scratch/

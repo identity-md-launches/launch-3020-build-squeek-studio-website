@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "react": [
+        "node_modules/@types/react",
+        "test/scratch/node_modules/@types/react"
+      ],
+      "react/*": [
+        "node_modules/@types/react/*",
+        "test/scratch/node_modules/@types/react/*"
+      ],
+      "react-dom/*": [
+        "node_modules/@types/react-dom/*",
+        "test/scratch/node_modules/@types/react-dom/*"
+      ],
+      "viem": ["node_modules/viem", "test/scratch/node_modules/viem"],
+      "viem/*": ["node_modules/viem/*", "test/scratch/node_modules/viem/*"],
+      "qrcode": [
+        "node_modules/@types/qrcode",
+        "test/scratch/node_modules/@types/qrcode"
+      ],
+      "fflate": ["node_modules/fflate", "test/scratch/node_modules/fflate"]
+    },
+    "typeRoots": ["node_modules/@types", "test/scratch/node_modules/@types"]
+  },
+  "include": ["src", "scripts/snapshot.ts"]
+}
